@@ -1,0 +1,96 @@
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.circle-container {
+  padding: 4px;
+  border: 2px dashed #efefef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#progress-bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+#progres-bar-descricao {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.active-circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: #5cbaf8 !important;
+}
+
+.active-circle-container {
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 2px dashed #5cbaf8;
+}
+
+.rotate {
+  animation: rotation 20s infinite linear;
+}
+
+.line {
+  border: 2px dashed #efefef !important;
+  width: 20%;
+  transition: 0.5s;
+}
+
+.line-active {
+  border: 2px dashed #90ccf5 !important;
+  width: 20%;
+  transition: 0.5s;
+}
+
+.actions {
+  width: 50%;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.actions > button {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions > button:hover {
+  background-color: #ccc;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
